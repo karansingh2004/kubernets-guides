@@ -1,8 +1,8 @@
-#This is a step by step guide for usecase of Clusterip and Nodeport mode in Kubernetes service.
-##Prequisites: You should have Minikube, Docker already installed.
-##Note :  code is inside " ". Remove "" after pasting into terminal.
+# This is a step by step guide for usecase of Clusterip and Nodeport mode in Kubernetes service.
+## Prequisites: You should have Minikube, Docker already installed.
+## Note :  code is inside " ". Remove "" after pasting into terminal.
 
-##1st step : Get docker image required for this tutorial
+## 1st step : Get docker image required for this tutorial
   "docker pull trainwithshubham/django-todo-app:latest"
 
 2nd step : start minikube cluster
