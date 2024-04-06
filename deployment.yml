@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-todo-cicd-project
+  labels:
+    app: django-todo-cicd-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-todo-cicd-project
+  template:
+    metadata:
+      labels:
+        app: django-todo-cicd-project
+    spec:
+      containers:
+      - name: django-todo-cicd-project
+        image: trainwithshubham/django-todo-app:latest
+        ports:
+        - containerPort: 8000
